@@ -22,6 +22,34 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    pseudo: {
+      type: String,
+      required: true
+    },
+    birthdate: {
+      type: String,
+      required: true
+    },
+    picture: {
+      type: String,
+      default: ''
+    },
+    localisation: {
+      type: String,
+      required: true
+    },
+    sexe: {
+      type: String,
+      required: true
+    },
+    lookup: {
+      type: String,
+      required: true
+    },
+    sitefav: {
+      type: String,
+      default: ''
+    },
     isAdmin: {
         type: Boolean,
         default: false
