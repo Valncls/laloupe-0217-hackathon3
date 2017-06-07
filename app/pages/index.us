@@ -10,11 +10,16 @@
 </head>
 
 <body>
-
+  <div id='wrap'>
     <div ui-view='navbar'></div>
-    <div ui-view='content'></div>
 
+    <div id='main' ui-view='content'></div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN74FLHqIamvhAdCEa8ZBhzfsrnQLuBUE&libraries=places"></script>
     <script type="text/javascript" src="<%= js %>"></script>
 </body>
+<footer>
+  <div id='footer' ui-view='footer'></div>
+</footer>
 
 </html>
