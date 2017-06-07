@@ -47,8 +47,7 @@ const userSchema = new mongoose.Schema({
       required: true
     },
     sitefav: {
-      type: String,
-      default: ''
+      type: Array
     },
     isAdmin: {
         type: Boolean,

@@ -1,44 +1,74 @@
 <div class="row">
-    <div class="col-xs-6 col-xs-offset-3">
-        <form class="form" name="loginForm" novalidate ng-submit="register()">
-            <div ng-repeat="error in errors">{{error.error}}</div>
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input id="pseudo" type="pseudo" class="form-control" ng-model="user.pseudo" required placeholder="Pseudo">
-            </div></br>
-            <div class="input-group">
-                <span class="input-group-addon"><i class="	glyphicon glyphicon-envelope"></i></span>
-                <input id="email" type="email" class="form-control" ng-model="user.email" required placeholder="Adresse eMail">
-            </div></br>
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                <input id="password" type="password" class="form-control" ng-model="user.password" required placeholder="Mot de Passe">
-            </div></br>
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                <input id="birthdate" type="date" class="form-control" ng-model="user.birthdate" required placeholder="Date d'anniversaire">
-            </div></br>
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
-                <input id="localisation" type="localisation" class="form-control" ng-model="user.localisation" required placeholder="Localité">
-            </div></br>
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
-                <input id="picture" type="picture" class="form-control" ng-model="user.picture" required placeholder="Photo">
-            </div></br>
-            <div class="input-group" ng-model="user.sexe">
-                <label class="text">Sexe : </label></br>
-                <label class="radio-inline"><input type="radio" name="optradio" value="homme" ng-model="user.sexe">Homme</label>
-                <label class="radio-inline"><input type="radio" name="optradio" value="femme" ng-model="user.sexe">Femme</label>
-                <label class="radio-inline"><input type="radio" name="optradio" value="autre" ng-model="user.sexe">Autre</label>
-            </div></br>
-            <div class="input-group" ng-model="user.lookup">
-                <label class="text">Recherche : </label></br>
-                <label class="radio-inline"><input type="radio" name="optradio2" value="homme" ng-model="user.lookup">Homme</label>
-                <label class="radio-inline"><input type="radio" name="optradio2" value="femme" ng-model="user.lookup">Femme</label>
-                <label class="radio-inline"><input type="radio" name="optradio2" value="autre" ng-model="user.lookup">Autre</label>
-            </div></br>
-            <button type="submit" class="btn btn-primary btn-block">Register</button>
-        </form>
-    </div>
+  <div class="col-xs-6 col-xs-offset-3">
+    <form class="form" name="loginForm" novalidate ng-submit="register()">
+      <div ng-repeat="error in errors">{{error.error}}</div>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input id="pseudo" type="pseudo" class="form-control" ng-model="user.pseudo" required placeholder="Pseudo">
+      </div>
+      </br>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="	glyphicon glyphicon-envelope"></i></span>
+        <input id="email" type="email" class="form-control" ng-model="user.email" required placeholder="Adresse eMail">
+      </div>
+      </br>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input id="password" type="password" class="form-control" ng-model="user.password" required placeholder="Mot de Passe">
+      </div>
+      </br>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+        <input id="birthdate" type="date" class="form-control" ng-model="user.birthdate" required placeholder="Date d'anniversaire">
+      </div>
+      </br>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+        <input id="localisation" type="localisation" class="form-control" ng-model="user.localisation" required placeholder="Localité">
+      </div>
+      </br>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+        <input id="picture" type="picture" class="form-control" ng-model="user.picture" required placeholder="Photo">
+      </div>
+      </br>
+      <div class="input-group" ng-model="user.sexe">
+        <label class="text">Sexe : </label></br>
+        <label class="radio-inline"><input type="radio" name="optradio" value="homme" ng-model="user.sexe">Homme</label>
+        <label class="radio-inline"><input type="radio" name="optradio" value="femme" ng-model="user.sexe">Femme</label>
+        <label class="radio-inline"><input type="radio" name="optradio" value="autre" ng-model="user.sexe">Autre</label>
+      </div>
+      </br>
+      <div class="input-group" ng-model="user.lookup">
+        <label class="text">Recherche : </label></br>
+        <label class="radio-inline"><input type="radio" name="optradio2" value="homme" ng-model="user.lookup">Homme</label>
+        <label class="radio-inline"><input type="radio" name="optradio2" value="femme" ng-model="user.lookup">Femme</label>
+        <label class="radio-inline"><input type="radio" name="optradio2" value="autre" ng-model="user.lookup">Autre</label>
+      </div>
+      </br>
+        <div class="btn-group">
+          <button data-toggle="dropdown" class="btn dropdown-toggle"  data-placeholder="Please select"> Sites fréquentés <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'AdopteUnMec'"><label value="AdopteUnMec">AdoptUnMec</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Tinder'"><label value="Tinder">Tinder</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Meetic'"><label value="Meetic">Meetic</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Hugavenue'"><label value="Hugavenue">Hugavenue</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Attractive world'"><label value="Attractive world">Attractive world</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'eDarling'"><label value="eDarling">eDarling</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Happn'"><label value="Happn">Happn</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Badoo'"><label value="Badoo">Badoo</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Elite rencontre'"><label value="Elite rencontre">Elite rencontre</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Casual dating'"><label value="Casual dating">Casual dating</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Tiilt'"><label value="Tiilt">Tiilt</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Gleeden'"><label value="Gleeden">Gleeden</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Easy flirt'"><label value="Easy flirt">Easy flirt</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Be2'"><label value="Be2">Be2</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Eden flirt'"><label value="Eden flirt">Eden flirt</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Once'"><label value="Once">Once</label></li>
+              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Bumble'"><label value="Bumble">Bumble</label></li>
+            </ul>
+        </div>
+      <button type="submit" class="btn btn-primary btn-block">Register</button>
+    </form>
+  </div>
 </div>
