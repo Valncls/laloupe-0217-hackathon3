@@ -4,12 +4,40 @@
             <div ng-repeat="error in errors">{{error.error}}</div>
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input id="email" type="email" class="form-control" ng-model="user.email" required placeholder="Email Address">
-            </div>
+                <input id="pseudo" type="pseudo" class="form-control" ng-model="user.pseudo" required placeholder="Pseudo">
+            </div></br>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="	glyphicon glyphicon-envelope"></i></span>
+                <input id="email" type="email" class="form-control" ng-model="user.email" required placeholder="Adresse eMail">
+            </div></br>
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                <input id="password" type="password" class="form-control" ng-model="user.password" required placeholder="Password">
-            </div>
+                <input id="password" type="password" class="form-control" ng-model="user.password" required placeholder="Mot de Passe">
+            </div></br>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                <input id="birthdate" type="date" class="form-control" ng-model="user.birthdate" required placeholder="Date d'anniversaire">
+            </div></br>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                <input id="localisation" type="localisation" class="form-control" ng-model="user.localisation" required placeholder="Localité">
+            </div></br>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                <input id="picture" type="picture" class="form-control" ng-model="user.picture" required placeholder="Photo">
+            </div></br>
+            <div class="input-group">
+                <label class="text">Sexe : </label></br>
+                <label class="radio-inline"><input type="radio" name="optradio">Homme</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Femme</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Autre</label>
+            </div></br>
+            <div class="input-group">
+                <label class="text">Recherche : </label></br>
+                <label class="radio-inline"><input type="radio" name="optradio2">Homme</label>
+                <label class="radio-inline"><input type="radio" name="optradio2">Femme</label>
+                <label class="radio-inline"><input type="radio" name="optradio2">Autre</label>
+            </div></br>
             <button type="submit" class="btn btn-primary btn-block">Register</button>
         </form>
     </div>
