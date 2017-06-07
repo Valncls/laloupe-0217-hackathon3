@@ -26,17 +26,17 @@
                 <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
                 <input id="picture" type="picture" class="form-control" ng-model="user.picture" required placeholder="Photo">
             </div></br>
-            <div class="input-group">
+            <div class="input-group" ng-model="user.sexe">
                 <label class="text">Sexe : </label></br>
-                <label class="radio-inline"><input type="radio" name="optradio">Homme</label>
-                <label class="radio-inline"><input type="radio" name="optradio">Femme</label>
-                <label class="radio-inline"><input type="radio" name="optradio">Autre</label>
+                <label class="radio-inline"><input type="radio" name="optradio" value="homme" ng-model="user.sexe">Homme</label>
+                <label class="radio-inline"><input type="radio" name="optradio" value="femme" ng-model="user.sexe">Femme</label>
+                <label class="radio-inline"><input type="radio" name="optradio" value="autre" ng-model="user.sexe">Autre</label>
             </div></br>
-            <div class="input-group">
+            <div class="input-group" ng-model="user.lookup">
                 <label class="text">Recherche : </label></br>
-                <label class="radio-inline"><input type="radio" name="optradio2">Homme</label>
-                <label class="radio-inline"><input type="radio" name="optradio2">Femme</label>
-                <label class="radio-inline"><input type="radio" name="optradio2">Autre</label>
+                <label class="radio-inline"><input type="radio" name="optradio2" value="homme" ng-model="user.lookup">Homme</label>
+                <label class="radio-inline"><input type="radio" name="optradio2" value="femme" ng-model="user.lookup">Femme</label>
+                <label class="radio-inline"><input type="radio" name="optradio2" value="autre" ng-model="user.lookup">Autre</label>
             </div></br>
             <button type="submit" class="btn btn-primary btn-block">Register</button>
         </form>

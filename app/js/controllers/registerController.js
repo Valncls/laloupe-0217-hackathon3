@@ -4,5 +4,6 @@ angular.module('app')
             Auth.register($scope.user).then(function() {
                 $state.go('anon.home');
             });
+            console.log($scope.user);
         };
     });
