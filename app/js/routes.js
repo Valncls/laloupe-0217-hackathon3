@@ -71,6 +71,15 @@ angular.module('app')
                     }
                 }
             })
+            .state('user.match', {
+                url: '/match',
+                views: {
+                    'content@': {
+                        templateUrl: 'user/match.html',
+                        controller: 'MatchController'
+                    }
+                }
+            })
             .state('user.profile', {
                 url: '/profile',
                 views: {
