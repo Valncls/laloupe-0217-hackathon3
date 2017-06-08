@@ -12,12 +12,12 @@
             <ul class="nav navbar-nav">
                 <li id="dashboardButton"><a ui-sref="user.dashboard" ng-show="auth.isAuthenticated()" id="dashboardButton">Dashboard</a></li>
                 <li id="profilButton"><a ui-sref="user.profile" ng-show="auth.isAuthenticated()" id="profilButton">Profile</a></li>
-                <li ui-sref-active="active"><a ui-sref="user.match" ng-show="auth.isAuthenticated()">Match</a></li>
+                <li id="matchButton"><a ui-sref="user.match" ng-show="auth.isAuthenticated()" id="matchButton">Match</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                <li id="websiteButton"><a ui-sref="anon.home" id="websiteButton">Website</a></li>
-                    <li id="logoutButton"><a ng-click="logout()" ng-show="auth.isAuthenticated()" href='#' id="logoutButton">Logout</a></li>
+                <li id="websiteButton"><a ui-sref="user.home" id="websiteButton">Website</a></li>
+                <li id="logoutButton"><a ng-click="logout()" ng-show="auth.isAuthenticated()" href='#' id="logoutButton">Logout</a></li>
                 </li>
             </ul>
         </div>

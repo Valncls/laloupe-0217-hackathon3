@@ -62,6 +62,15 @@ angular.module('app')
                     access: AccessLevels.user
                 }
             })
+            .state('user.home', {
+                url: '/',
+                views: {
+                    'content@': {
+                        templateUrl: 'user/home.html',
+                        controller: 'MainController'
+                    }
+                }
+            })
             .state('user.dashboard', {
                 url: '/dashboard',
                 views: {
