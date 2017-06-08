@@ -11,15 +11,15 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
-                <li ui-sref-active="active"><a ui-sref="anon.home">Home</a></li>
+                <li id="homeButton"><a id="homeButton" ui-sref="anon.home">Home</a></li>
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <li ui-sref-active="active"><a ui-sref="anon.login" ng-hide="auth.isAuthenticated()">Login</a></li>
-                    <li ui-sref-active="active"><a ui-sref="anon.register" ng-hide="auth.isAuthenticated()">Register</a></li>
-                    <li ui-sref-active="active"><a ui-sref="user.dashboard" ng-show="auth.isAuthenticated()">Dashboard</a></li>
-                    <li><a ng-click="logout()" ng-show="auth.isAuthenticated()" href='#'>Logout</a></li>
+                    <li  id="loginButton"><a id="loginButton" ui-sref="anon.login" ng-hide="auth.isAuthenticated()">Login</a></li>
+                    <li  id="registerButton"><a id="registerButton" ui-sref="anon.register" ng-hide="auth.isAuthenticated()">Register</a></li>
+                    <li  id="dashboardButton"><a class="navbarButton" ui-sref="user.dashboard" ng-show="auth.isAuthenticated()" id="dashboardButton">Dashboard</a></li>
+                    <li  id="logoutButton"><a ng-click="logout()" ng-show="auth.isAuthenticated()" href='#' id="logoutButton">Logout</a></li>
                 </li>
             </ul>
         </div>
