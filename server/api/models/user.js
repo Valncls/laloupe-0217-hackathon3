@@ -182,4 +182,17 @@ export default class User {
             }
         });
     }
+
+    findMatch(req, res) {
+      console.log(req.body);
+      model.find({ "sitefav": { "$nin": req.body.sites},
+                    "sexe": req.body.lookup
+        }, (err, users) => {
+        if (err) {
+            res.status(500).send(err.message);
+        } else {
+            res.json(users);
+        }
+      });
+    }
 }
