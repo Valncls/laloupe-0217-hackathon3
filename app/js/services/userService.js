@@ -4,6 +4,9 @@ angular.module('app')
             getAll: function() {
                 return $http.get('/users');
             },
+            getAllMatch: function(sites) {
+                return $http.put('/users', sites);
+            },
             getOne: function(id) {
                 return $http.get('/users/' + id);
             },

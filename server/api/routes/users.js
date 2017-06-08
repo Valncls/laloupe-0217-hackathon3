@@ -14,7 +14,7 @@ module.exports = (app) => {
 
     app.post('/login', user.connect);
 
-    router.get('/', Auth.hasAuthorization, user.findAll);
+    router.put('/', Auth.hasAuthorization, user.findMatch);
 
     router.get('/:id', Auth.hasAuthorization, user.findById);
 
@@ -25,5 +25,7 @@ module.exports = (app) => {
     router.delete('/:id', Auth.hasAuthorization, user.delete);
 
     app.use('/users', router);
+
+
 
 };
