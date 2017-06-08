@@ -10,16 +10,18 @@ body{
 h1 {
   text-align: center;
   font-size: 50px;
+  color: white;
 }
 
 .parallax {
 
-    background-image: url('../img/parralax-img-3.jpg');
+    background-image: url('../img/parralax-img-4.jpg');
     height: 600px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -21px;
 }
 .parallax-2 {
 
@@ -47,27 +49,35 @@ h1 {
   bottom: 0;
 }
 #navbar {
-  background-color: #424558;
-  height: 200px;
+  background-color: white;
+  height: 100px !important;
+
 }
 #loginButton {
   color : #0a93a6;
+  font-size: 20px;
 }
 #registerButton {
   color : #0a93a6;
+  font-size: 20px;
 }
 #homeButton {
   color : #0a93a6;
+  font-size: 20px;
 }
 #profilButton {
   color : #0a93a6;
+  font-size: 20px;
 }
 #logoutButton {
   color : #0a93a6;
+  font-size: 20px;
 }
 #dashboardButton {
   color : #0a93a6;
+  font-size: 20px;
 }
 #websiteButton {
   color : #0a93a6;
+  font-size: 20px;
 }
