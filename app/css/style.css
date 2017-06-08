@@ -52,35 +52,7 @@ h1 {
   height: 100px !important;
 
 }
-#loginButton {
-  color : #0a93a6;
-  font-size: 20px;
-}
-#registerButton {
-  color : #0a93a6;
-  font-size: 20px;
-}
-#homeButton {
-  color : #0a93a6;
-  font-size: 20px;
-}
-#profilButton {
-  color : #0a93a6;
-  font-size: 20px;
-}
-#logoutButton {
-  color : #0a93a6;
-  font-size: 20px;
-}
-#dashboardButton {
-  color : #0a93a6;
-  font-size: 20px;
-}
-#websiteButton {
-  color : #0a93a6;
-  font-size: 20px;
-}
-#matchButton {
+#loginButton, #registerButton, #homeButton, #profilButton, #logoutButton, #dashboardButton, #websiteButton, #matchButton {
   color : #0a93a6;
   font-size: 20px;
 }
