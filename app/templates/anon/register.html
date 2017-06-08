@@ -32,6 +32,11 @@
         <input id="picture" type="picture" class="form-control" ng-model="user.picture" required placeholder="Photo">
       </div>
       </br>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        <textarea id="description" type="description" class="form-control" ng-model="user.description" required placeholder="Presentez vous"></textarea>
+      </div>
+      </br>
       <div class="input-group" ng-model="user.sexe">
         <label class="text">Sexe : </label></br>
         <label class="radio-inline"><input type="radio" name="optradio" value="homme" ng-model="user.sexe">Homme</label>
