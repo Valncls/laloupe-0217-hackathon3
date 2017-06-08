@@ -7,6 +7,30 @@ body{
   position: relative;
 }
 
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.parallax {
+
+    background-image: url('../img/parralax-img-3.jpg');
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-2 {
+
+    background-image: url('../img/parralax-img-2.jpg');
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #wrap{
   min-height:100%;
   position: relative;
@@ -16,8 +40,34 @@ body{
   position relative;
   padding-bottom: 100px;
 }
-#footer{
+
+footer {
   height: 100px;
   position: absolute;
   bottom: 0;
+}
+#navbar {
+  background-color: #424558;
+  height: 200px;
+}
+#loginButton {
+  color : #0a93a6;
+}
+#registerButton {
+  color : #0a93a6;
+}
+#homeButton {
+  color : #0a93a6;
+}
+#profilButton {
+  color : #0a93a6;
+}
+#logoutButton {
+  color : #0a93a6;
+}
+#dashboardButton {
+  color : #0a93a6;
+}
+#websiteButton {
+  color : #0a93a6;
 }
