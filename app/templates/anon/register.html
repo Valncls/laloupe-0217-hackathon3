@@ -37,14 +37,14 @@
         <textarea id="description" type="description" class="form-control" ng-model="user.description" required placeholder="Presentez vous"></textarea>
       </div>
       </br>
-      <div class="input-group" ng-model="user.sexe">
+      <div class="input-group" id="radioForm" ng-model="user.sexe">
         <label class="text">Sexe : </label></br>
         <label class="radio-inline"><input type="radio" name="optradio" value="Homme" ng-model="user.sexe">Homme</label>
         <label class="radio-inline"><input type="radio" name="optradio" value="Femme" ng-model="user.sexe">Femme</label>
         <label class="radio-inline"><input type="radio" name="optradio" value="Autre" ng-model="user.sexe">Autre</label>
       </div>
       </br>
-      <div class="input-group" ng-model="user.lookup">
+      <div class="input-group" id="radioForm2" ng-model="user.lookup">
         <label class="text">Recherche : </label></br>
         <label class="radio-inline"><input type="radio" name="optradio2" value="Homme" ng-model="user.lookup">Homme</label>
         <label class="radio-inline"><input type="radio" name="optradio2" value="Femme" ng-model="user.lookup">Femme</label>
@@ -84,6 +84,6 @@
             </div>
           </div>
         </div>
-      <button type="submit" class="btn btn-primary btn-block">Register</button>
+      <button id="registerSubmit" type="submit" class="btn btn-primary btn-block">Register</button>
     </form>
   </div>

@@ -5,6 +5,7 @@ html{
 body{
   height:100%;
   position: relative;
+  background-color: black;
 }
 
 h1 {
@@ -15,7 +16,7 @@ h1 {
 .parallax {
 
     background-image: url('../img/parralax-img.jpg');
-    height: 600px;
+    height: 550px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,7 +26,7 @@ h1 {
 .parallax-2 {
 
     background-image: url('../img/parralax-img-3.jpg');
-    height: 600px;
+    height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,24 +40,58 @@ h1 {
 
 #main{
   position: relative;
-  padding-bottom: 100px;
 }
 
-#footer {
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-}
 #navbar {
-  background-color: white;
-  height: 100px !important;
+  background-color: black;
+  height: 70px !important;
+  margin-bottom: -2px;
 
 }
 #loginButton, #registerButton, #homeButton, #profilButton, #logoutButton, #dashboardButton, #websiteButton, #matchButton {
-  color : #0a93a6;
+  color : grey;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.slogan {
+  margin-left: 30px;
+  color: black;
+}
+#profilHome {
   font-size: 20px;
 }
 
+#cardHome {
+  height: 400px;
+  margin-top: 45px;
+}
+
+.form-control {
+  background-color: #E5E5E5;
+  color: black;
+}
+#radioForm, #radioForm2 {
+  color: white;
+}
+
+#registerSubmit {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #E5E5E5;
+  border-color: #E5E5E5;
+  color: grey;
+}
+
+#loginSubmit {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #E5E5E5;
+  border-color: #E5E5E5;
+  color: grey;
+}
+
+
 .liste_sites {
   list-style: none;
+
 }
