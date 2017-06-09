@@ -2,11 +2,9 @@
 
 <div class="col-lg-12">
   <div>
-    <div class="col-md-offset-4 col-md-4" ng-repeat="user in users" ng-if="!user.isAdmin && user._id != currentUser._id">
+    <div class="col-md-offset-4 col-md-4" ng-if="user.primary" ng-repeat="user in users" ng-class="{primary: user.primary}" ng-if="!user.isAdmin && user._id != currentUser._id">
       <div class="profile-card text-center">
-				<!-- <img class="img-responsive" src="https://images.unsplash.com/photo-1451188502541-13943edb6acb?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925">
-				<img class="img-responsive" src="https://images.unsplash.com/photo-1447877085163-3cce903855cd?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925"> -->
-        <img class="img-responsive" src="https://images.unsplash.com/photo-1454678904372-2ca94103eca4?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925">
+        <img class="img-responsive" src="https://framapic.org/RddQvSHiY0e3/dpYxk0NxJZjY.jpg">
         <div class="profile-info">
           <img class="profile-pic" src="{{user.picture}}">
           <h2 class="hvr-underline-from-center">{{user.pseudo}}<span>{{user.email}}</span><i class="fa fa-mars"></i></h2>
@@ -16,7 +14,7 @@
           <div>{{user.description}}</div>
           <a href="#"><i class="fa fa-thumbs-down fa-2x"></i></a>
           <a href="mailto:{{user.email}}"><i class="fa fa-envelope-o fa-2x"></i></a>
-          <a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a>
+          <a href="" ng-click="selectUser($index)"><i class="fa fa-thumbs-up fa-2x"></i></a>
         </div>
       </div>
     </div>
