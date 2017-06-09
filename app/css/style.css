@@ -45,6 +45,7 @@ h1 {
 #navbar {
   background-color: black;
   height: 70px !important;
+  margin-bottom: -2px;
 
 }
 #loginButton, #registerButton, #homeButton, #profilButton, #logoutButton, #dashboardButton, #websiteButton, #matchButton {
@@ -66,5 +67,25 @@ h1 {
 
 .form-control {
   background-color: #E5E5E5;
+  color: black;
+}
+#radioForm, #radioForm2 {
   color: white;
+}
+
+#registerSubmit {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #E5E5E5;
+  border-color: #E5E5E5;
+  color: grey;
+}
+
+#loginSubmit {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #E5E5E5;
+  border-color: #E5E5E5;
+  color: grey;
+}
 }
