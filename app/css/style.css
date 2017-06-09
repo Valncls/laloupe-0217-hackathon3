@@ -6,6 +6,7 @@ body{
   height:100%;
   position: relative;
   background-color: black;
+  font-family:  'Exo', sans-serif;
 }
 
 h1 {
@@ -93,5 +94,13 @@ h1 {
 
 .liste_sites {
   list-style: none;
+}
 
+#slogan {
+  text-align: center;
+}
+#slogan2 {
+  text-align: center;
+  color: #E5E5E5;
+  margin-top: 30px;
 }
