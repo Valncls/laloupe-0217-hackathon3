@@ -60,6 +60,7 @@ h1 {
 #profilHome {
   font-size: 20px;
 }
+
 #cardHome {
   height: 400px;
   margin-top: 45px;
@@ -88,4 +89,9 @@ h1 {
   border-color: #E5E5E5;
   color: grey;
 }
+
+
+.liste_sites {
+  list-style: none;
+
 }

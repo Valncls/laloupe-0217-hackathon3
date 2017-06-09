@@ -52,26 +52,37 @@
       </div>
       </br>
         <div class="btn-group">
-          <button data-toggle="dropdown" class="btn dropdown-toggle"  data-placeholder="Please select"> Sites fréquentés <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'AdopteUnMec'"><label value="AdopteUnMec">AdoptUnMec</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Tinder'"><label value="Tinder">Tinder</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Meetic'"><label value="Meetic">Meetic</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Hugavenue'"><label value="Hugavenue">Hugavenue</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'AttractiveWorld'"><label value="AttractiveWorld">Attractive world</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'eDarling'"><label value="eDarling">eDarling</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Happn'"><label value="Happn">Happn</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Badoo'"><label value="Badoo">Badoo</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'EliteRencontre'"><label value="EliteRencontre">Elite rencontre</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'CasualDating'"><label value="CasualDating">Casual dating</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Tiilt'"><label value="Tiilt">Tiilt</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Gleeden'"><label value="Gleeden">Gleeden</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'EasyFlirt'"><label value="EasyFlirt">Easy flirt</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Be2'"><label value="Be2">Be2</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'EdenFlirt'"><label value="EdenFlirt">Eden flirt</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Once'"><label value="Once">Once</label></li>
-              <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Bumble'"><label value="Bumble">Bumble</label></li>
-            </ul>
+          <button type="button" data-toggle="modal" data-target="#myModal" class="btn dropdown-toggle"  data-placeholder="Please select">Sites fréquentés</button>
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <ul class="liste_sites">
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'AdopteUnMec'"><label value="AdopteUnMec">AdoptUnMec</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Tinder'"><label value="Tinder">Tinder</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Meetic'"><label value="Meetic">Meetic</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Hugavenue'"><label value="Hugavenue">Hugavenue</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'AttractiveWorld'"><label value="AttractiveWorld">Attractive world</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'eDarling'"><label value="eDarling">eDarling</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Happn'"><label value="Happn">Happn</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Badoo'"><label value="Badoo">Badoo</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'EliteRencontre'"><label value="EliteRencontre">Elite rencontre</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'CasualDating'"><label value="CasualDating">Casual dating</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Tiilt'"><label value="Tiilt">Tiilt</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Gleeden'"><label value="Gleeden">Gleeden</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'EasyFlirt'"><label value="EasyFlirt">Easy flirt</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Be2'"><label value="Be2">Be2</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'EdenFlirt'"><label value="EdenFlirt">Eden flirt</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Once'"><label value="Once">Once</label></li>
+                    <li><input type="checkbox" checklist-model="user.sitefav" checklist-value="'Bumble'"><label value="Bumble">Bumble</label></li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       <button id="registerSubmit" type="submit" class="btn btn-primary btn-block">Register</button>
     </form>
